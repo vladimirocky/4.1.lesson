@@ -1,0 +1,29 @@
+{
+  "name": "4.1.lesson",
+  "version": "1.0.0",
+  "description": "В репозитории размещен проект с файлами из <a src=\"https://codesandbox.io/s/devhlevel3less1-gzyycs\">1 задания 3 Модуля</a>. В представленном на платформе видео – простой пример использования  webpack для успешного запуска проекта.\r Задача:\r <ul>\r     <li> Создать свою ветку в репозитории </li>\r     <li> Настроить webpack (не обязательно точно также как на видео) чтобы проект успешно запустился </li>\r     <li> Самостоятельно ознакомиться с тем, как работают Loaders | webpack  (позволяет подключать к проекту не только файлы .js и .json) </li>\r     <li> Добавить на странице проекта для каждой цены иконку cash | bootstrap </li>\r     <li> Изменить стили любого элемента страницы (импортировать их из сторонней библиотеки) </li>\r     <li> Настроить webpack так, чтобы проект успешно запустился </li>\r     <li> Разместить код на удаленном репозитории </li>\r     <li> В ответе на платформе прислать название вашей ветки и краткий комментарий к ней </li>\r </ul>",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
+    "webpack": "^5.72.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirocky/4.1.lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimirocky/4.1.lesson/issues"
+  },
+  "homepage": "https://github.com/vladimirocky/4.1.lesson#readme"
+}
