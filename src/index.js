@@ -35,7 +35,9 @@ function renderItem({ name, price, count }) {
     <button class="addTocart btn btn-warning" data-name="${name}" data-price="${price}">
     Добавить
     </button>
-
+    <button class="delTocart btn btn-danger" id="pop" data-name="${name}" data-price="${price}">
+    Удалить
+    </button>
     </p>
 
     </div>
@@ -68,6 +70,21 @@ function renderPage() {
       // увеличиваем количество в тележке
       cart[name].count += 1;
       // перерисовываем страницу
+      renderPage();
+    });
+  });
+  document.querySelectorAll(".delTocart").forEach((el) => {
+    
+    el.addEventListener("click", (event) => {
+      
+      let name = event.target.getAttribute("data-name");
+      let price = event.target.getAttribute("data-price");
+      
+      
+      if (cart[name].count > 0) {
+        cart[name].count -= 1;
+        totalPrice -= price;
+      }
       renderPage();
     });
   });
