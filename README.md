@@ -1,5 +1,7 @@
-Installation
-<hr></hr>
-`
-    npm install webpack --save-dev
-`
+## Installation
+
+Install depencies. 
+
+```sh
+npm install
+```
