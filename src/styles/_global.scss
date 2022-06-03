@@ -1,0 +1,19 @@
+$primaryColor: darkcyan;
+$secondaryColor: darkslategray;
+
+html {
+   font-family: generalFont;
+}
+
+p {
+   color: $primaryColor;
+}
+button {
+   border-radius: 20px;
+   background-color: $secondaryColor;
+   color: #ececec;
+   cursor: pointer;
+   &:hover {
+      background-color: rgba(47, 79, 79, 0.8);
+   }
+}

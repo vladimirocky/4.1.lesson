@@ -2,6 +2,8 @@
 import products from "./data_module";
 // импортирует полезные функции
 import { addHtml, clearHtml } from "./utils";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/index.scss'
 
 let totalPrice = 0;
 const cart = {};
@@ -24,6 +26,7 @@ function renderItem({ name, price, count }) {
 
     addHtml(`
     <p>
+      <i class="bi bi-cash"></i>
       ${name} [ ${price} руб ] - ${count} шт
       <button class="addTocart" data-name="${name}" data-price="${price}">
         Добавить
@@ -42,7 +45,7 @@ function renderPage() {
         renderItem(cart[product.name]);
     }
     // добавляем в конце итог
-    addHtml(`Итог: ${totalPrice} руб`);
+    addHtml(`<span class="text-info">Итог: ${totalPrice} руб</span>`);
 
     // выбирает все кнопки по классу addTocart
     document.querySelectorAll(".addTocart").forEach((el) => {
