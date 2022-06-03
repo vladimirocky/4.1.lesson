@@ -1,5 +1,5 @@
 Installation
-<hr>
+<hr></hr>
 `
     npm install webpack --save-dev
 `
