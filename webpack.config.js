@@ -13,4 +13,19 @@ module.exports = {
         new CleanWebpackPlugin() 
     ]
 }
-
+module.exports = {
+    module: {
+      rules: [
+  
+        // Правило для CSS
+        {
+          test: /\.css$/,
+          use: [
+            {loader: 'style-loader'},
+            {loader: 'css-loader'},
+            {loader: 'sass-loader'}
+          ]
+        }
+      ]
+    }
+  }
